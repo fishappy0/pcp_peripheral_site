@@ -4,6 +4,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'Courier-New': ['Courier New'],
+      'Bell-MT': ['Bell-MT']
+    }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
