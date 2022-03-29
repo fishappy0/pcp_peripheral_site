@@ -1,6 +1,6 @@
 import {NextPage} from 'next';
 export function join_class_name(...cls_names: string[]){
-    return cls_names.filter(Boolean).join('');
+    return cls_names.filter(Boolean).join(' ');
 };
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 
@@ -19,7 +19,7 @@ export function create_nav_elements(cls_names: string[], drpdwn_items: Array<{na
         <a
             key={item.name}
             className={join_class_name(...cls_names)
-            }href={item.href}>
+            } href={item.href}>
                 {item.name}
         </a>
     ));
